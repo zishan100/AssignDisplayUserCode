@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 
-import { AppBar, Paper, TablePagination, TableRow, Typography, Container} from '@material-ui/core/'
+import { AppBar, Paper, TablePagination, Typography, Container} from '@material-ui/core/'
 
 import Cards from './Component/card';
 import { makeStyles } from '@material-ui/core/styles';
@@ -55,17 +55,6 @@ const App =()=> {
     setPage(0);
   };  
     
-  // const SerachBySymbol = (e) => {
-  //   let search = e.target.value;
-  //   let newnse = nselist.filter(nse => {
-  //       return  nse.SYMBOL.includes(search.trim().toUpperCase())
-  //     })  
-             
-  //   Setsearchlist(newnse);
-      
-  // }  
-
-
   return (
     <div  className='main-container'>
       <Container maxWidth='xl' >
@@ -92,11 +81,8 @@ const App =()=> {
        }
         
       </div> 
-     
-      
-          
-    </Paper> 
-        <TablePagination
+     </Paper> 
+      <TablePagination
         rowsPerPageOptions={[6,12]}
         component="div"
         count={12}
@@ -107,7 +93,8 @@ const App =()=> {
       /> 
       </Container>
     </div>
-    );
+    
+  );
   
 }
 
