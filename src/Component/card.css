@@ -1,0 +1,15 @@
+.contain-fullname {
+  display: flex;
+  justify-content: space-around;
+}
+.bottom-text {
+  margin-top: 1rem !important;
+  text-align: center !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  color: rgb(10, 10, 10) !important;
+}
+.MuiPaper-outlined {
+  border: 1.5px solid rgba(102, 153, 153, 0.8) !important;
+  box-shadow: 3px 6px 5px 1px #888888;
+}
